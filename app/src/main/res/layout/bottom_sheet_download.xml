@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/regularCardID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/White"
+        android:clickable="true"
+        android:elevation="24dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="14dp">
+
+        <ImageView
+            android:id="@+id/regularImageID"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/regular" />
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/originalCardID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/regularCardID"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/White"
+        android:clickable="true"
+        android:elevation="24dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="14dp">
+
+        <ImageView
+            android:id="@+id/orignalImageID"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/original" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/rawCardID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/regularCardID"
+        android:layout_marginEnd="38dp"
+        android:backgroundTint="@color/White"
+        android:clickable="true"
+        android:elevation="24dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="14dp">
+
+        <ImageView
+            android:id="@+id/rawImageID"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/raw" />
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/myDeviceCardID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/rawCardID"
+        android:layout_marginTop="165dp"
+        android:backgroundTint="@color/White"
+        android:clickable="true"
+        android:elevation="24dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="14dp">
+
+        <ImageView
+            android:id="@+id/deviceImageID"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/device" />
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/compressedCardID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/myDeviceCardID"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/White"
+        android:clickable="true"
+        android:elevation="24dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="14dp">
+
+        <ImageView
+            android:id="@+id/compressedImageID"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/compress" />
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/customCardID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/regularCardID"
+        android:layout_alignTop="@+id/myDeviceCardID"
+        android:backgroundTint="@color/White"
+        android:clickable="true"
+        android:elevation="24dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="14dp">
+
+        <ImageView
+            android:id="@+id/customImageID"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/resize" />
+
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="70sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regularCardID"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Orininal Image Size"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="70sp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/rawCardID"
+        android:layout_below="@+id/regularCardID"
+        android:gravity="center"
+        android:text="Raw Image Size"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="105dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="70sp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/regularCardID"
+        android:layout_alignTop="@+id/textView6"
+        android:gravity="center"
+        android:text="Custom Image Size"
+        android:layout_marginBottom="30dp"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="70sp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:text="Compressed Image Size"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="70sp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/rawCardID"
+        android:layout_below="@+id/myDeviceCardID"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:text="My Device Size"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="70sp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/regularCardID"
+        android:layout_below="@+id/regularCardID"
+        android:gravity="center"
+        android:text="Regular Image Size"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
